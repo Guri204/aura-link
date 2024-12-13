@@ -13,22 +13,31 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/reset.css" media="all">
     <link rel="stylesheet" href="./assets/css/style.css" media="all">
-    <script src="./assets/js/index.js" type="module"></script>
+    <script src="./assets/js/index.js" defer></script>
 </head>
 <body>
-    <div class="login-container">
-        <div class="profile-icon"></div>
-        <h1>Aura Link</h1>
-        <form>
-            <div class="input-group">
-                <input type="text" placeholder="Email or Phone" required>
-            </div>
-            <div class="input-group">
-                <input type="password" placeholder="Password" required>
-            </div>
-            <div class="button-group">
-                <button type="submit" class="login-button">Login</button>
-            </div>
-        </form>
+    <div class="container">
+        <div class="image-side">
+            <img src="./assets/img/aura link logo.png">
+        </div>
+        <div class="login-container">
+            <div class="profile-icon"></div>
+            <h1>Aura Link</h1>
+            <form>
+                <div class="input-group">
+                    <input type="text" id="user-inputs" placeholder="Email or Phone" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <div class="message-showing" id="message-showing">
+                    <p></p>
+                </div>
+                <div class="button-group">
+                    <button type="submit" id="loginButton" class="login-button">Login</button>
+                </div>
+            </form>
+        </div>
     </div>
+    
 </body>

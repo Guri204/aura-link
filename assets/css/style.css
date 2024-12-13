@@ -4,30 +4,47 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
+    background-color: #fff;
     display: flex;
-    background: url('../img/background-image-index');
+    /* background: linear-gradient(270deg, #5987B2, #fff); */
     background-size: cover; /* Ensures the image covers the area */
     background-position: center;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    user-select: none;
+}
+
+.container {
+    display: flex;
+    gap: 60px;
+}
+.image-side {
+    height: 50%;
+    width: 50%;
+    place-items: center;
+    mask-image: url('../img/aura\ link\ logo.png');
+    -webkit-mask-image: url('../img/aura\ link\ logo.png');
 }
 
 .login-container {
+    margin-top: 70px;
     text-align: center;
-    background: #fff;
-    padding: 30px 20px;
+    background: #ffffffd9;
+    padding: 20px 30px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 350px;
+    height: 400px;
+
+    h1 {
+        margin-bottom: 20px;
+        color: #5987B2;
+        font-size: 24px;
+    }
 }
 
-h1 {
-    margin-bottom: 20px;
-    color: #5987B2;
-    font-size: 24px;
-}
+
 
 .input-group {
     margin-bottom: 15px;
@@ -35,7 +52,7 @@ h1 {
 
 input {
     width: 100%;
-    padding: 10px;
+    padding: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
@@ -45,6 +62,7 @@ button {
     padding: 10px 15px;
     font-size: 16px;
     border: none;
+    margin-top: 20px;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -56,7 +74,6 @@ button {
     background: url('../img/user-profile') no-repeat center;
     background-size: cover;
     border-radius: 50%;
-    border: 2px solid white;
     zoom: 40px;
 }
 
@@ -64,9 +81,17 @@ button {
     background-color: #5987B2;
     color: #fff;
     width: 100%;
-    margin-bottom: 10px;
+
 }
 
 button:hover {
     opacity: 0.9;
+}
+#message-showing {
+    height: 20px;
+}
+
+#message-showing p {
+    margin: 0;
+    color: red;
 }
