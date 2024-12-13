@@ -6,9 +6,6 @@ body {
     font-family: Arial, sans-serif;
     background-color: #fff;
     display: flex;
-    /* background: linear-gradient(270deg, #5987B2, #fff); */
-    background-size: cover; /* Ensures the image covers the area */
-    background-position: center;
     justify-content: center;
     align-items: center;
     height: 100vh;
