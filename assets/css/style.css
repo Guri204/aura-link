@@ -1,1 +1,94 @@
 @charset "utf-8";
+
+/* General Reset */
+.index-body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    user-select: none;
+}
+
+.container {
+    display: flex;
+    gap: 60px;
+}
+.image-side {
+    height: 50%;
+    width: 50%;
+    place-items: center;
+    mask-image: url('../img/aura\ link\ logo.png');
+    -webkit-mask-image: url('../img/aura\ link\ logo.png');
+}
+
+.login-container {
+    margin-top: 70px;
+    text-align: center;
+    background: #ffffffd9;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    height: 400px;
+
+    h1 {
+        margin-bottom: 20px;
+        color: #5987B2;
+        font-size: 24px;
+    }
+}
+
+
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profile-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px auto;
+    background: url('../img/user-profile') no-repeat center;
+    background-size: cover;
+    border-radius: 50%;
+    zoom: 40px;
+}
+
+.login-button {
+    background-color: #5987B2;
+    color: #fff;
+    width: 100%;
+
+}
+
+button:hover {
+    opacity: 0.9;
+}
+#message-showing {
+    height: 20px;
+}
+
+#message-showing p {
+    margin: 0;
+    color: red;
+}
